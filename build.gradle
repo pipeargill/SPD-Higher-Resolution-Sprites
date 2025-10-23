@@ -15,7 +15,7 @@ allprojects {
         appPackageName = 'com.pipeargill.shatteredpixeldungeonHRS'
 
         appVersionCode = 877
-        appVersionName = '3.2.5 Mod 0.1'
+        appVersionName = '3.2.5 Mod 0.2'
 
         appJavaCompatibility = JavaVersion.VERSION_11
 
