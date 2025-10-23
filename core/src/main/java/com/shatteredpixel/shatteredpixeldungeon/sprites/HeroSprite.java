@@ -39,8 +39,8 @@ import com.watabou.utils.RectF;
 
 public class HeroSprite extends CharSprite {
 	
-	private static final int FRAME_WIDTH	= 12;
-	private static final int FRAME_HEIGHT	= 15;
+	private static final int FRAME_WIDTH	= 48; //Mod
+	private static final int FRAME_HEIGHT	= 60; //Mod
 	
 	private static final int RUN_FRAMERATE	= 20;
 	
@@ -54,6 +54,8 @@ public class HeroSprite extends CharSprite {
 		
 		texture( Dungeon.hero.heroClass.spritesheet() );
 		updateArmor();
+
+		scale.set(0.25f);  //Mod
 		
 		link( Dungeon.hero );
 
@@ -70,8 +72,9 @@ public class HeroSprite extends CharSprite {
 	
 	public void updateArmor() {
 
-		TextureFilm film = new TextureFilm( tiers(), Dungeon.hero.tier(), FRAME_WIDTH, FRAME_HEIGHT );
-		
+		//TextureFilm film = new TextureFilm( tiers(), Dungeon.hero.tier(), FRAME_WIDTH, FRAME_HEIGHT );
+		TextureFilm film = new TextureFilm( texture, FRAME_WIDTH, FRAME_HEIGHT ); //Mod
+
 		idle = new Animation( 1, true );
 		idle.frames( film, 0, 0, 0, 1, 0, 0, 1, 1 );
 		
