@@ -142,7 +142,7 @@ public class PixelScene extends Scene {
 		}
 
 		minZoom = 1;
-		maxZoom = defaultZoom * 15; //Mod
+		maxZoom = defaultZoom * 30; //Mod
 
 		Camera.reset( new PixelCamera( defaultZoom ) );
 
