@@ -1,7 +1,7 @@
 # Shattered Pixel Dungeon - Higher Resolution Sprites Mod
 This is a simple mod that adds more pixel resolution to sprites in Shattered Pixel Dungeon. This is mostly for practice, but I hope someone finds it useful for pixel art!
 
-I plan to use Mod 0.X added to the version of SPD to note how many attempts I've made at debugging my code on that version. 
+I plan to use Mod 0.X added to the version of SPD to note how many attempts I've made at debugging my code on that version.
 
 [Shattered Pixel Dungeon](https://shatteredpixel.com/shatteredpd/) is an open-source traditional roguelike dungeon crawler with randomized levels and enemies, and hundreds of items to collect and use. It's based on the [source code of Pixel Dungeon](https://github.com/00-Evan/pixel-dungeon-gradle), by [Watabou](https://watabou.itch.io/).
 
