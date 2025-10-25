@@ -30,8 +30,10 @@ public class BanditSprite extends MobSprite {
 		super();
 		
 		texture( Assets.Sprites.THIEF );
-		TextureFilm film = new TextureFilm( texture, 12, 13 );
-		
+		TextureFilm film = new TextureFilm( texture, 192, 208 );
+
+		scale.set(0.0625f);  //Mod
+
 		idle = new Animation( 1, true );
 		idle.frames( film, 21, 21, 21, 22, 21, 21, 21, 21, 22 );
 		

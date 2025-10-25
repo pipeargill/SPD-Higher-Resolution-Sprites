@@ -31,8 +31,10 @@ public class CausticSlimeSprite extends MobSprite {
 		
 		texture( Assets.Sprites.SLIME );
 		
-		TextureFilm frames = new TextureFilm( texture, 14, 12 );
-		
+		TextureFilm frames = new TextureFilm( texture, 14*16, 12*16 ); //Mod
+
+		scale.set(0.0625f);  //Mod
+
 		int c = 9;
 		
 		idle = new Animation( 3, true );

@@ -52,8 +52,10 @@ public abstract class ElementalSprite extends MobSprite {
 		
 		texture( Assets.Sprites.ELEMENTAL );
 		
-		TextureFilm frames = new TextureFilm( texture, 12, 14 );
-		
+		TextureFilm frames = new TextureFilm( texture, 12*16, 14*16 );
+
+		scale.set(0.0625f);  //Mod
+
 		idle = new Animation( 10, true );
 		idle.frames( frames, c+0, c+1, c+2 );
 		

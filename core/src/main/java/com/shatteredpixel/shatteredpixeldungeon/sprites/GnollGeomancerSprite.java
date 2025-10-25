@@ -59,7 +59,9 @@ public class GnollGeomancerSprite extends MobSprite {
 
 	private void updateAnims(){
 
-		TextureFilm frames = new TextureFilm( texture, 12, 16 );
+		TextureFilm frames = new TextureFilm( texture, 12*16, 16*16 );
+
+		scale.set(0.0625f);  //Mod
 
 		int ofs = isStatue ? 21 : 0;
 		idle = new Animation( isStatue ? 1 : 2, true );

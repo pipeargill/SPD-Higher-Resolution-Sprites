@@ -44,7 +44,9 @@ public abstract class CrystalWispSprite extends MobSprite {
 
 		texture( Assets.Sprites.CRYSTAL_WISP );
 
-		TextureFilm frames = new TextureFilm( texture, 12, 14 );
+		TextureFilm frames = new TextureFilm( texture, 12*16, 14*16 ); //Mod
+
+		scale.set(0.0625f);  //Mod
 
 		idle = new Animation( 1, true );
 		idle.frames( frames, c+0 );

@@ -39,7 +39,9 @@ public class RotHeartSprite extends MobSprite {
 
 		texture( Assets.Sprites.ROT_HEART );
 
-		TextureFilm frames = new TextureFilm( texture, 16, 16 );
+		TextureFilm frames = new TextureFilm( texture, 16*16, 16*16 ); //Mod
+
+		scale.set(0.0625f);  //Mod
 
 		idle = new MovieClip.Animation( 1, true );
 		idle.frames( frames, 0);

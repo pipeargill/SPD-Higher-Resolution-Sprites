@@ -36,7 +36,9 @@ public abstract class CrystalGuardianSprite extends MobSprite {
 
 		texture( Assets.Sprites.CRYSTAL_GUARDIAN );
 
-		TextureFilm frames = new TextureFilm( texture, 12, 15 );
+		TextureFilm frames = new TextureFilm( texture, 12*16, 15*16 ); //Mod
+
+		scale.set(0.0625f);  //Mod
 
 		int c = texOffset();
 

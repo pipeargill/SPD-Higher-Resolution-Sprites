@@ -32,8 +32,10 @@ public class LarvaSprite extends MobSprite {
 		
 		texture( Assets.Sprites.LARVA );
 		
-		TextureFilm frames = new TextureFilm( texture, 12, 8 );
-		
+		TextureFilm frames = new TextureFilm( texture, 12*16, 8*16 ); //Mod
+
+		scale.set(0.0625f);  //Mod
+
 		idle = new Animation( 5, true );
 		idle.frames( frames, 4, 4, 4, 4, 4, 5, 5 );
 		

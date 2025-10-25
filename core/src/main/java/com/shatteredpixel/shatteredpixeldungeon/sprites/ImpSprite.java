@@ -34,8 +34,10 @@ public class ImpSprite extends MobSprite {
 		
 		texture( Assets.Sprites.IMP );
 		
-		TextureFilm frames = new TextureFilm( texture, 12, 14 );
-		
+		TextureFilm frames = new TextureFilm( texture, 12*16, 14*16 );  //Mod
+
+		scale.set(0.0625f);  //Mod
+
 		idle = new Animation( 10, true );
 		idle.frames( frames,
 			0, 1, 2, 3, 0, 1, 2, 3, 0, 0, 0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,

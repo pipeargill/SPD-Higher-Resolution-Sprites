@@ -34,8 +34,10 @@ public class MonkSprite extends MobSprite {
 		
 		texture( Assets.Sprites.MONK );
 		
-		TextureFilm frames = new TextureFilm( texture, 15, 14 );
-		
+		TextureFilm frames = new TextureFilm( texture, 15*16, 14*16 ); //Mod
+
+		scale.set(0.0625f);  //Mod
+
 		idle = new Animation( 6, true );
 		idle.frames( frames, 1, 0, 1, 2 );
 		

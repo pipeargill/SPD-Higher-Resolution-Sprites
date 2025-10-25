@@ -31,7 +31,9 @@ public class HermitCrabSprite extends MobSprite {
 
 		texture( Assets.Sprites.CRAB );
 
-		TextureFilm frames = new TextureFilm( texture, 16, 16 );
+		TextureFilm frames = new TextureFilm( texture, 16*16, 16*16 ); //Mod
+
+		scale.set(0.0625f);  //Mod
 
 		int c = 16;
 

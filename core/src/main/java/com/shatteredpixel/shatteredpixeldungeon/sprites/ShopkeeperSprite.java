@@ -33,7 +33,9 @@ public class ShopkeeperSprite extends MobSprite {
 		super();
 		
 		texture( Assets.Sprites.KEEPER );
-		TextureFilm film = new TextureFilm( texture, 14, 14 );
+		TextureFilm film = new TextureFilm( texture, 14*16, 14*16 ); //Mod
+
+		scale.set(0.0625f);  //Mod
 		
 		idle = new Animation( 10, true );
 		idle.frames( film, 1, 1, 1, 1, 1, 0, 0, 0, 0 );

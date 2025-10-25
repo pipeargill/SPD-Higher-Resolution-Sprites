@@ -40,7 +40,9 @@ public class SpectralNecromancerSprite extends MobSprite {
 		super();
 
 		texture( Assets.Sprites.NECRO );
-		TextureFilm film = new TextureFilm( texture, 16, 16 );
+		TextureFilm film = new TextureFilm( texture, 16*16, 16*16 ); //Mod
+
+		scale.set(0.0625f);  //Mod
 
 		int c = 16;
 

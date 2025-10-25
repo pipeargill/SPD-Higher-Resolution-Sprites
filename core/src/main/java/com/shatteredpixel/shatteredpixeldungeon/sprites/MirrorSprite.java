@@ -30,8 +30,8 @@ import com.watabou.utils.PointF;
 
 public class MirrorSprite extends MobSprite {
 	
-	private static final int FRAME_WIDTH	= 12;
-	private static final int FRAME_HEIGHT	= 15;
+	private static final int FRAME_WIDTH	= 12*16;
+	private static final int FRAME_HEIGHT	= 15*16;
 	
 	public MirrorSprite() {
 		super();
@@ -58,7 +58,9 @@ public class MirrorSprite extends MobSprite {
 	
 	public void updateArmor( int tier ) {
 		TextureFilm film = new TextureFilm( HeroSprite.tiers(), tier, FRAME_WIDTH, FRAME_HEIGHT );
-		
+
+		scale.set(0.0625f);  //Mod
+
 		idle = new Animation( 1, true );
 		idle.frames( film, 0, 0, 0, 1, 0, 0, 1, 1 );
 		

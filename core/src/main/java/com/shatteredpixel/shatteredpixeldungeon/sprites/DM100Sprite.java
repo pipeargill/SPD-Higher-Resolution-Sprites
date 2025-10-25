@@ -38,8 +38,10 @@ public class DM100Sprite extends MobSprite {
 		
 		texture( Assets.Sprites.DM100 );
 		
-		TextureFilm frames = new TextureFilm( texture, 16, 14 );
-		
+		TextureFilm frames = new TextureFilm( texture, 16*16, 14*16 ); //Mod
+
+		scale.set(0.0625f);  //Mod
+
 		idle = new Animation( 1, true );
 		idle.frames( frames, 0, 1 );
 

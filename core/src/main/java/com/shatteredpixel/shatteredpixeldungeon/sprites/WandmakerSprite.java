@@ -37,7 +37,9 @@ public class WandmakerSprite extends MobSprite {
 		
 		texture( Assets.Sprites.MAKER );
 		
-		TextureFilm frames = new TextureFilm( texture, 12, 14 );
+		TextureFilm frames = new TextureFilm( texture, 12*16, 14*16 ); //Mod
+
+		scale.set(0.0625f);  //Mod
 		
 		idle = new Animation( 10, true );
 		idle.frames( frames, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 3, 3, 3, 3, 3, 2, 1 );

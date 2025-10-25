@@ -36,8 +36,10 @@ public class ScorpioSprite extends MobSprite {
 		
 		texture( Assets.Sprites.SCORPIO );
 		
-		TextureFilm frames = new TextureFilm( texture, 17, 17 );
-		
+		TextureFilm frames = new TextureFilm( texture, 272, 272 ); //Mod
+
+		scale.set(0.0625f);  //Mod
+
 		idle = new Animation( 12, true );
 		idle.frames( frames, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 1, 2, 1, 2 );
 		

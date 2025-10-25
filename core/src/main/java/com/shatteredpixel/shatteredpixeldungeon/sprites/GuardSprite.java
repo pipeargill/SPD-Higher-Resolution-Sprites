@@ -33,7 +33,9 @@ public class GuardSprite extends MobSprite {
 
 		texture( Assets.Sprites.GUARD );
 
-		TextureFilm frames = new TextureFilm( texture, 12, 16 );
+		TextureFilm frames = new TextureFilm( texture, 12*16, 16*16 ); //Mod
+
+		scale.set(0.0625f);  //Mod
 
 		idle = new Animation( 2, true );
 		idle.frames( frames, 0, 0, 0, 1, 0, 0, 1, 1 );

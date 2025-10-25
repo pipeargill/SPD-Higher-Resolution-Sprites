@@ -40,8 +40,10 @@ public class GolemSprite extends MobSprite {
 		
 		texture( Assets.Sprites.GOLEM );
 		
-		TextureFilm frames = new TextureFilm( texture, 17, 19 );
-		
+		TextureFilm frames = new TextureFilm( texture, 17*16, 19*16 ); //Mod
+
+		scale.set(0.0625f);  //Mod
+
 		idle = new Animation( 4, true );
 		idle.frames( frames, 0, 1 );
 		

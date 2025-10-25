@@ -50,7 +50,9 @@ public class MimicSprite extends MobSprite {
 
 		texture( Assets.Sprites.MIMIC );
 
-		TextureFilm frames = new TextureFilm( texture, 16, 16 );
+		TextureFilm frames = new TextureFilm( texture, 16*16, 16*16 ); //Mod
+
+		scale.set(0.0625f);  //Mod
 
 		advancedHiding = new Animation( 1, true );
 		advancedHiding.frames( frames, 0+c);

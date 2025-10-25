@@ -50,8 +50,10 @@ public class GooSprite extends MobSprite {
 		
 		texture( Assets.Sprites.GOO );
 		
-		TextureFilm frames = new TextureFilm( texture, 20, 14 );
-		
+		TextureFilm frames = new TextureFilm( texture, 20*16, 14*16 );
+
+		scale.set(0.0625f);  //Mod
+
 		idle = new Animation( 10, true );
 		idle.frames( frames, 2, 1, 0, 0, 1 );
 		

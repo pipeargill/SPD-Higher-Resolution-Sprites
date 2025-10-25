@@ -30,7 +30,9 @@ public class ThiefSprite extends MobSprite {
 		super();
 		
 		texture( Assets.Sprites.THIEF );
-		TextureFilm film = new TextureFilm( texture, 12, 13 );
+		TextureFilm film = new TextureFilm( texture, 12*16, 13*16 ); //Mod
+
+		scale.set(0.0625f);  //Mod
 		
 		idle = new Animation( 1, true );
 		idle.frames( film, 0, 0, 0, 1, 0, 0, 0, 0, 1 );

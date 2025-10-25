@@ -38,7 +38,9 @@ public class DM200Sprite extends MobSprite {
 
 		texture( Assets.Sprites.DM200 );
 
-		TextureFilm frames = new TextureFilm( texture, 21, 18 );
+		TextureFilm frames = new TextureFilm( texture, 21*16, 18*16 );
+
+		scale.set(0.0625f);  //Mod
 
 		idle = new Animation( 10, true );
 		idle.frames( frames, 0, 1 );

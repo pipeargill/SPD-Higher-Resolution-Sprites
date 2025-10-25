@@ -44,7 +44,9 @@ public class LotusSprite extends MobSprite {
 
 		texture( Assets.Sprites.LOTUS );
 
-		TextureFilm frames = new TextureFilm( texture, 19, 16 );
+		TextureFilm frames = new TextureFilm( texture, 19*16, 16*16 ); //Mod
+
+		scale.set(0.0625f);  //Mod
 
 		idle = new MovieClip.Animation( 1, true );
 		idle.frames( frames, 0 );

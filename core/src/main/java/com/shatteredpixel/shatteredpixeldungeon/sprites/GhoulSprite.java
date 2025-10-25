@@ -33,7 +33,9 @@ public class GhoulSprite extends MobSprite {
 		
 		texture( Assets.Sprites.GHOUL );
 		
-		TextureFilm frames = new TextureFilm( texture, 12, 14 );
+		TextureFilm frames = new TextureFilm( texture, 12*16, 14*16 );
+
+		scale.set(0.0625f);  //Mod
 
 		idle = new Animation( 2, true );
 		idle.frames( frames, 0, 0, 0, 1 );

@@ -36,7 +36,9 @@ public class NewbornElementalSprite extends MobSprite{
 
 		int ofs = 21;
 
-		TextureFilm frames = new TextureFilm( texture, 12, 14 );
+		TextureFilm frames = new TextureFilm( texture, 12*16, 14*16 ); //Mod
+
+		scale.set(0.0625f);  //Mod
 
 		idle = new MovieClip.Animation( 10, true );
 		idle.frames( frames, ofs+0, ofs+1, ofs+2 );

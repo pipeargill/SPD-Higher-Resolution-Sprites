@@ -31,7 +31,9 @@ public class TormentedSpiritSprite extends MobSprite {
 
 		texture( Assets.Sprites.WRAITH );
 
-		TextureFilm frames = new TextureFilm( texture, 14, 15 );
+		TextureFilm frames = new TextureFilm( texture, 14*16, 15*16 ); //Mod
+
+		scale.set(0.0625f);  //Mod
 
 		int c = 9;
 

@@ -32,7 +32,7 @@ import com.watabou.noosa.TextureFilm;
 public abstract class CrystalSpireSprite extends MobSprite {
 
 	{
-		perspectiveRaise = 7 / 16f; //7 pixels
+		perspectiveRaise = 7*16 / 16f; //7 pixels //Mod
 
 		shadowWidth     = 1f;
 		shadowHeight    = 1f;
@@ -42,7 +42,9 @@ public abstract class CrystalSpireSprite extends MobSprite {
 	public CrystalSpireSprite(){
 		texture( Assets.Sprites.CRYSTAL_SPIRE );
 
-		TextureFilm frames = new TextureFilm( texture, 24, 41 );
+		TextureFilm frames = new TextureFilm( texture, 24*16, 41*16 );
+
+		scale.set(0.0625f);  //Mod
 
 		int c = texOffset();
 

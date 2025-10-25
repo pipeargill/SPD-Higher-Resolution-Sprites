@@ -41,7 +41,9 @@ public class PhantomPiranhaSprite extends MobSprite {
 
 		texture( Assets.Sprites.PIRANHA );
 
-		TextureFilm frames = new TextureFilm( texture, 12, 16 );
+		TextureFilm frames = new TextureFilm( texture, 12*16, 16*16 ); //Mod
+
+		scale.set(0.0625f);  //Mod
 
 		int c = 21;
 

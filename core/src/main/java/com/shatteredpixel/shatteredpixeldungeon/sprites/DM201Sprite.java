@@ -38,7 +38,9 @@ public class DM201Sprite extends MobSprite {
 
 		texture( Assets.Sprites.DM200 );
 
-		TextureFilm frames = new TextureFilm( texture, 21, 18 );
+		TextureFilm frames = new TextureFilm( texture, 21*16, 18*16 );
+
+		scale.set(0.0625f);  //Mod
 
 		int c = 12;
 
