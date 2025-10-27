@@ -112,7 +112,7 @@ public class StatusPane extends Component {
 				Camera.main.panTo( Dungeon.hero.sprite.center(), 5f );
 				GameScene.show( new WndHero() );
 			}
-			
+
 			@Override
 			public GameAction keyAction() {
 				return SPDAction.HERO_INFO;
@@ -279,7 +279,7 @@ public class StatusPane extends Component {
 
 		counter.point(busy.center());
 	}
-	
+
 	private static final int[] warningColors = new int[]{0x660000, 0xCC0000, 0x660000};
 
 	private int oldHP = 0;
@@ -289,7 +289,7 @@ public class StatusPane extends Component {
 	@Override
 	public void update() {
 		super.update();
-		
+
 		int health = Dungeon.hero.HP;
 		int shield = Dungeon.hero.shielding();
 		int max = Dungeon.hero.HT;
@@ -371,6 +371,7 @@ public class StatusPane extends Component {
 		if (tier != lastTier) {
 			lastTier = tier;
 			avatar.copy( HeroSprite.avatar( Dungeon.hero ) );
+
 		}
 
 		counter.setSweep((1f - Actor.now()%1f)%1f);
@@ -405,3 +406,4 @@ public class StatusPane extends Component {
 	}
 
 }
+
