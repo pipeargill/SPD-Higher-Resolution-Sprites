@@ -186,6 +186,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedHashMap;
 
+
 public class Hero extends Char {
 
 	{
@@ -240,7 +241,6 @@ public class Hero extends Char {
 
 	public Hero() {
 		super();
-
 		HP = HT = 20;
 		STR = STARTING_STR;
 		
@@ -252,7 +252,7 @@ public class Hero extends Char {
 	public void updateHT( boolean boostHP ){
 		int curHT = HT;
 		
-		HT = 20 + 5*(lvl-1) + HTBoost;
+		HT = 999; //20 + 5*(lvl-1) + HTBoost; //Debug
 		float multiplier = RingOfMight.HTMultiplier(this);
 		HT = Math.round(multiplier * HT);
 		
@@ -1565,6 +1565,7 @@ public class Hero extends Char {
 
 	@Override
 	public void damage( int dmg, Object src ) {
+		if (true) return; //Debug
 		if (buff(TimekeepersHourglass.timeStasis.class) != null
 				|| buff(TimeStasis.class) != null) {
 			return;

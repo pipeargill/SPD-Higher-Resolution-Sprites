@@ -30,6 +30,7 @@ import com.shatteredpixel.shatteredpixeldungeon.actors.blobs.Fire;
 import com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Mob;
 import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
 import com.shatteredpixel.shatteredpixeldungeon.scenes.GameScene;
+import com.shatteredpixel.shatteredpixeldungeon.sprites.MobSprite;
 import com.shatteredpixel.shatteredpixeldungeon.ui.BuffIndicator;
 import com.watabou.noosa.Image;
 import com.watabou.utils.BArray;
@@ -82,6 +83,8 @@ public abstract class ChampionEnemy extends Buff {
 	public float evasionAndAccuracyFactor(){
 		return 1f;
 	}
+
+
 
 	{
 		immunities.add(AllyBuff.class);
@@ -204,6 +207,8 @@ public abstract class ChampionEnemy extends Buff {
 			color = 0x0088FF;
 			rays = 5;
 		}
+
+		
 
 		@Override
 		public float damageTakenFactor() {
